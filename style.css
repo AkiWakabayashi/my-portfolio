@@ -116,3 +116,54 @@ body {
   gap: 60px;                    /* メニューとの間も確保 */
   box-sizing: border-box;
 }
+
+/* デフォルトはPC向けに書いておく */
+
+/* スマホ画面サイズ（768px以下）で適用されるスタイル */
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column; /* 横並び → 縦並びに */
+    align-items: center;
+  }
+
+  .header {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .content-area {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .main-content {
+    width: 90%;
+    margin: 0 auto 30px auto;
+  }
+
+  .menu {
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .hex-button {
+    width: 60px;
+    height: 60px;
+    margin: 5px;
+  }
+
+  .hex-button img {
+    transform: scale(0.8);
+  }
+
+  .hex-button:hover img {
+    transform: scale(1.1);
+  }
+
+  .label {
+    display: none; /* スマホではホバー表示しづらいので非表示 */
+  }
+}
