@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aki's Portfolio</title>
+  <!-- Google FontsからOrbitronを読み込む -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+
+    <!-- ヘッダー -->
+    <div class="header">
+      <h1>Aki's Portfolio</h1>
+    </div>
+
+    <!-- メインとメニュー -->
+    <div class="content-area">
+      <div class="main-content" id="content">
+        <h2>Home</h2>
+        <p>ここはホーム画面です。最新情報や自己紹介の概要を載せよう！</p>
+      </div>
+
+      <div class="menu">
+        <div class="hex-button" onclick="showContent('home')">
+          <img src="image/home.png" alt="Home" />
+          <span class="label">Home</span>
+        </div>
+        <div class="hex-button" onclick="showContent('profile')">
+          <img src="image/Profile.png" alt="Profile" />
+          <span class="label">Profile</span>
+        </div>
+        <div class="hex-button" onclick="showContent('skills')">
+          <img src="image/skills.png" alt="Skills" />
+          <span class="label">Skills</span>
+        </div>
+        <div class="hex-button" onclick="showContent('works')">
+          <img src="image/works.png" alt="Works" />
+          <span class="label">Works</span>
+        </div>
+        <div class="hex-button" onclick="showContent('contact')">
+          <img src="image/contact.png" alt="Contact" />
+          <span class="label">Contact</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 🔽 ここを忘れず追加！ -->
+  <script src="script.js"></script>
+</body>
+</html>
