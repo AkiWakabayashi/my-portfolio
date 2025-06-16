@@ -136,6 +136,7 @@ body {
   flex-wrap: nowrap;
   padding: 0 16px;
   z-index: 999;
+  flex-direction: row;
   }
 
   .hex-button {
