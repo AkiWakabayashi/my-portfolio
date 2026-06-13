@@ -1,57 +1,55 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Aki's Portfolio</title>
-  <!-- Google FontsからOrbitronを読み込む -->
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex">
+  <title>準備中</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: -apple-system, "Hiragino Sans", "Yu Gothic", sans-serif;
+      background: #0f1115;
+      color: #e8e8e8;
+      text-align: center;
+      padding: 24px;
+    }
+    .box { max-width: 480px; }
+    h1 {
+      font-size: clamp(28px, 6vw, 44px);
+      letter-spacing: 0.05em;
+      margin-bottom: 16px;
+    }
+    p {
+      font-size: 15px;
+      line-height: 1.8;
+      color: #9aa0a6;
+    }
+    .dots { margin-top: 24px; }
+    .dot {
+      display: inline-block;
+      width: 8px; height: 8px;
+      margin: 0 4px;
+      border-radius: 50%;
+      background: #4a90d9;
+      animation: blink 1.4s infinite both;
+    }
+    .dot:nth-child(2) { animation-delay: 0.2s; }
+    .dot:nth-child(3) { animation-delay: 0.4s; }
+    @keyframes blink { 0%, 80%, 100% { opacity: 0.2; } 40% { opacity: 1; } }
+  </style>
 </head>
 <body>
-  <div class="container">
-
-    <!-- ヘッダー -->
-    <div class="header">
-      <h1>Aki's Portfolio</h1>
-    </div>
-
-    <!-- メインとメニュー -->
-    <div class="content-area">
-      <div class="main-content" id="content">
-        <h2>Home</h2>
-        <p>「万事塞翁が馬」「自分の力で未来は変えられる」<br>
-        「人と会話することは大切である」をモットーに生きています。<br>
-        案件のご相談、どんなことでもお待ちしております。</p>
-      </div>
-
-      <div class="menu">
-        <div class="hex-button" onclick="showContent('home')">
-          <img src="image/home.png" alt="Home" />
-          <span class="label">Home</span>
-        </div>
-        <div class="hex-button" onclick="showContent('profile')">
-          <img src="image/Profile.png" alt="Profile" />
-          <span class="label">Profile</span>
-        </div>
-        <div class="hex-button" onclick="showContent('skills')">
-          <img src="image/skills.png" alt="Skills" />
-          <span class="label">Skills</span>
-        </div>
-        <div class="hex-button" onclick="showContent('works')">
-          <img src="image/works.png" alt="Works" />
-          <span class="label">Works</span>
-        </div>
-        <div class="hex-button" onclick="showContent('contact')">
-          <img src="image/contact.png" alt="Contact" />
-          <span class="label">Contact</span>
-        </div>
-      </div>
+  <div class="box">
+    <h1>準備中</h1>
+    <p>このページは現在準備中です。<br>もうしばらくお待ちください。</p>
+    <div class="dots">
+      <span class="dot"></span><span class="dot"></span><span class="dot"></span>
     </div>
   </div>
-
-  <!-- 🔽 ここを忘れず追加！ -->
-  <script src="script.js"></script>
 </body>
 </html>
